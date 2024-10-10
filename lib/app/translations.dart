@@ -6,6 +6,7 @@ final class AppTranslations extends Translations {
   Map<String, Map<String, String>> get keys => {
         AppLocales.usa.key: {
           AppTranslationsKeys.homeTitle.value: 'Home Page',
+          AppTranslationsKeys.homeButton.value: 'Switch Theme',
           AppTranslationsKeys.unknownTitle.value: 'Unknown Page',
         },
       };
@@ -13,6 +14,7 @@ final class AppTranslations extends Translations {
 
 enum AppTranslationsKeys {
   homeTitle('home_title'),
+  homeButton('home_button'),
   unknownTitle('unknown_title');
 
   const AppTranslationsKeys(this.value);

@@ -11,6 +11,16 @@ final class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(AppTranslationsKeys.homeTitle.value.tr),
       ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Get.changeTheme(
+              Get.isDarkMode ? ThemeData.light() : ThemeData.dark(),
+            );
+          },
+          child: Text(AppTranslationsKeys.homeButton.value.tr),
+        ),
+      ),
     );
   }
 }
