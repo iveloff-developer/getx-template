@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_template/app/binding.dart';
-import 'package:get_template/app/router.dart';
+import 'package:get_template/app/router/router.dart';
 import 'package:get_template/app/theme/themes.dart';
 import 'package:get_template/app/translations.dart';
 
