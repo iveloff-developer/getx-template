@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get_template/app/translations.dart';
+import 'package:get_template/app/localization/base_translation_keys.dart';
+import 'package:get_template/view/unknown/translation_keys.dart';
 
 final class UnknownPage extends StatelessWidget {
   const UnknownPage({super.key});
@@ -9,7 +9,7 @@ final class UnknownPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppTranslationsKeys.unknownTitle.value.tr),
+        title: Text(UnknownPageTranslationKeys.title.text),
       ),
     );
   }

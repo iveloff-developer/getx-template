@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_template/app/binding.dart';
+import 'package:get_template/app/localization/locales.dart';
 import 'package:get_template/app/router/router.dart';
 import 'package:get_template/app/theme/themes.dart';
-import 'package:get_template/app/translations.dart';
+import 'package:get_template/app/localization/translations.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

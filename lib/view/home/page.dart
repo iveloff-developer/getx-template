@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_template/app/translations.dart';
+import 'package:get_template/app/localization/base_translation_keys.dart';
+import 'package:get_template/view/home/translation_keys.dart';
 
 final class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,7 +10,7 @@ final class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppTranslationsKeys.homeTitle.value.tr),
+        title: Text(HomePageTranslationKeys.title.key.tr),
       ),
       body: Center(
         child: ElevatedButton(
@@ -18,7 +19,7 @@ final class HomePage extends StatelessWidget {
               Get.isDarkMode ? ThemeData.light() : ThemeData.dark(),
             );
           },
-          child: Text(AppTranslationsKeys.homeButton.value.tr),
+          child: Text(HomePageTranslationKeys.button.text),
         ),
       ),
     );
