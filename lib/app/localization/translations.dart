@@ -5,8 +5,8 @@ import 'package:get_template/view/unknown/translation_keys.dart';
 
 final class AppTranslations extends Translations {
   @override
-  Map<String, Map<String, String>> get keys => {
-        AppLocales.usa.key: {
+  Map<String, Map<String, String>> get keys => <String, Map<String, String>>{
+        AppLocales.usa.key: <String, String>{
           // Home Page.
           HomePageTranslationKeys.title.key: 'Home Page',
           HomePageTranslationKeys.button.key: 'Switch Theme',

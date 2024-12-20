@@ -6,11 +6,9 @@ final class UnknownPage extends StatelessWidget {
   const UnknownPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(UnknownPageTranslationKeys.title.text),
-      ),
-    );
-  }
+  Widget build(final BuildContext context) => Scaffold(
+        appBar: AppBar(
+          title: Text(UnknownPageTranslationKeys.title.text),
+        ),
+      );
 }

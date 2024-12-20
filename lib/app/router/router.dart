@@ -5,15 +5,15 @@ import 'package:get_template/view/unknown/page.dart';
 abstract final class AppRouter {
   static String get initialRoute => '/';
 
-  static GetPage get unknownPage => GetPage(
+  static GetPage<dynamic> get unknownPage => GetPage<dynamic>(
         name: '/unknown',
-        page: () => UnknownPage(),
+        page: UnknownPage.new,
       );
 
-  static List<GetPage<dynamic>> get pages => [
-        GetPage(
+  static List<GetPage<dynamic>> get pages => <GetPage<dynamic>>[
+        GetPage<dynamic>(
           name: '/',
-          page: () => HomePage(),
+          page: HomePage.new,
         ),
         unknownPage,
       ];
