@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_template/app/localization/base_translation_keys.dart';
+import 'package:get_template/core/localization/base_translation_keys.dart';
 import 'package:get_template/view/home/translation_keys.dart';
 
 final class HomePage extends StatelessWidget {

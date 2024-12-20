@@ -1,4 +1,4 @@
-import 'package:get_template/app/localization/base_translation_keys.dart';
+import 'package:get_template/core/localization/base_translation_keys.dart';
 
 enum HomePageTranslationKeys implements BaseTranslationKeys {
   title('home_page_title'),
